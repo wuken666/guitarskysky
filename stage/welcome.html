@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+	<title></title>
+</head>
+<link rel="stylesheet" href="../lib/layui-v2.5.5/css/layui.css" media="all">
+<link rel="stylesheet" href="../css/public.css" media="all">
+<link rel="stylesheet" type="text/css" href="../css/stage/welcome.css">
+<link rel="stylesheet" type="text/css" href="../css/stage/main.css">
+<link rel="stylesheet" href="../font/iconfont.css">
+<body>
+  <div class="layui-layout layui-layout-admin">
+    <div class="layui-header layui-bg-blue">
+      <div class="layui-logo">GUITARSKY</div>
+      <!-- 头部区域（可配合layui已有的水平导航） -->
+      <ul class="layui-nav layui-layout-left">
+        <li class="layui-nav-item"><a href="#">首页</a></li>
+        <li class="layui-nav-item"><a href="/guitarsky/stage/music.html">乐谱</a></li>
+        <li class="layui-nav-item"><a href="/guitarsky/stage/instruction.html">乐器</a></li>
+        <li class="layui-nav-item"><a href="/guitarsky/stage/instruction.html">论坛</a></li>
+      </ul>
+
+      <form class="layui-form" action="">
+        <div id="search_nav" class="layui-form-item">
+          <label class="layui-form-label"><span class="iconfont icon-sousuo" ></span></label>
+          <input type="text" name="search_str" class="input_key" placeholder="谱曲名称...." maxlength="100" autocomplete="on">
+        </div>
+      </form>
+
+      <ul class="layui-nav layui-layout-right">
+       <!--  <li class="layui-nav-item">
+          <a href="">消息<span class="layui-badge">9</span></a>
+        </li>
+        <li class="layui-nav-item">
+          <a href="">个人中心<span class="layui-badge-dot"></span></a>
+        </li>
+        <li class="layui-nav-item" lay-unselect="">
+        
+          <a href="javascript:;"><img src="//t.cn/RCzsdCq" class="layui-nav-img">我</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">修改信息</a></dd>
+            <dd><a href="javascript:;">安全管理</a></dd>
+            <dd><a href="javascript:;">退了</a></dd>
+          </dl>
+        </li> -->
+        <li class="layui-nav-item">
+          <a href="javascript:;"><span class="iconfont icon-username1"></span>登录</a>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;"><span class="iconfont icon-zhuce">注册</a>
+          </li>
+        </ul>
+      </div>
+      <div class="layui-carousel" id="test1" lay-anim="fade" lay-indicator="inside" lay-arrow="hover">
+        <div carousel-item>
+          <div class="swiper-slide" style="background-image:url(https://att.jitashe.org/data/attachment/banner/2560_chuji.jpg?x-oss-process=image/quality,q_85)"></div>
+          <div class="swiper-slide" style="background-image:url(https://att.jitashe.org/data/attachment/portal/202011/04/193040v4s493o9ez91mdsf.jpg?x-oss-process=image/quality,q_85)"></div>
+          <div class="swiper-slide" style="background-image:url(https://att.jitashe.org/data/attachment/portal/202007/24/170523uuezkikx4e2rs5x5.jpg?x-oss-process=image/quality,q_85)"></div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="container index-bc">
+          <div class="row" style="position: relative;">
+            <div class="col-lg-3 col-md-6 col-xs-6 bc-item">
+              <a href="https://mp.weixin.qq.com/s/XLooibRHOWeHUp9TfPfzlw" rel="nofollow" target="_blank"><img src="https://static.jitashe.org/template/jitashe/image/bc/355_trumon.gif?x-oss-process=image/crop,w_303"></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs-6 bc-item">
+              <a href="http://www.doveguitars.com/" rel="nofollow" target="_blank"><img src="https://static.jitashe.org/template/jitashe/image/bc/303_dove.jpg"></a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs-6 bc-item">
+              <a href="http://www.farida.cn/" rel="nofollow" target="_blank"><img src="https://static.jitashe.org/template/jitashe/image/bc/farida.gif"></a>
+            </div>   
+            <div class="col-lg-3 col-md-6 col-xs-6 bc-item">
+              <a href="http://www.martinezguitars.com/" rel="nofollow" target="_blank"><img src="https://static.jitashe.org/template/jitashe/image/bc/303_Martinez.gif"></a>
+            </div>   
+            <div class="col-lg-3 col-md-6 col-xs-6 bc-item">
+              <a href="http://kepmaguitar.com/" rel="nofollow" target="_blank"><img src="https://static.jitashe.org/template/jitashe/image/bc/303_kepma.gif"></a>
+            </div>         
+            <div class="col-lg-3 col-md-6 col-xs-6 bc-item">
+              <a href="http://www.enyamusical.com/enyazqUH/index_28.html" rel="nofollow" target="_blank"><img src="https://static.jitashe.org/template/jitashe/image/bc/303_enya.gif"></a>
+            </div>          
+            <div class="col-lg-3 col-md-6 col-xs-6 bc-item">
+              <a href="https://www.tyma.cn/" rel="nofollow" target="_blank"><img src="https://static.jitashe.org/template/jitashe/image/bc/303_tyma.gif"></a>
+            </div>      
+            <div class="col-lg-3 col-md-6 col-xs-6 bc-item"><div><a rel="nofollow" href="http://wm.makeding.com/iclk/?zoneid=20831" target="_blank"><img src="https://static.jitashe.org/template/jitashe/image/bc/355_pro7_2.jpg?x-oss-process=image/crop,w_303,x_43" border="0"></a></div></div>
+            <i class="iconfont icon-guanggao bc-flag" style="top: -2px;right: 9px;"></i>
+          </div>
+        </div>
+        <div class="oparen_area">
+          <span class="oparen-title"><a>乐谱</a><icon style="font-weight: 700;font-size: 20px;" class="iconfont icon-fuhao1"></icon></span>
+          <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+            <ul class="layui-tab-title">
+              <li class="layui-this">推荐</li>
+              
+
+            </ul>
+          </div>
+          <div class="container-fluid tablist">
+            <div class="row oparen">
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350175/" target="_blank"><img src="https://att.jitashe.org/data/attachment/xmimg/images/album/img35/135/3224671375670448.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350175/" title="沙龙的吉他谱" target="_blank">沙龙</a></div>
+                  <div class="item-text item-artist">陈奕迅</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350174/" target="_blank"><img src="https://att.jitashe.org/data/attachment/group/3c/group_9835_icon.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350174/" title="(郑成河)鬼灭之刃：无限列车篇 主题曲 炎 H的吉他谱" target="_blank">(郑成河)鬼灭之刃：无限列车篇 主题曲 炎 H</a></div>
+                  <div class="item-text item-artist">群星</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350173/" target="_blank"><img src="https://att.jitashe.org/data/attachment/group/96/group_4180_icon.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350173/" title="黄河我的家的吉他谱" target="_blank">黄河我的家</a></div>
+                  <div class="item-text item-artist">张玮玮</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350172/" target="_blank"><img src="https://att.jitashe.org/data/attachment/group/3c/group_9835_icon.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350172/" title="《My only one》Cover郑中基-《暖男爸爸》的吉他谱" target="_blank">《My only one》Cover郑中基-《暖男爸爸》</a></div>
+                  <div class="item-text item-artist">群星</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350170/" target="_blank"><img src="https://att.jitashe.org/data/attachment/xmimg/images/album/img94/7194/14157293421415729342.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350170/" title="定西（原版吉他谱）  【李志经典】的吉他谱" target="_blank">定西（原版吉他谱）  【李志经典】</a></div>
+                  <div class="item-text item-artist">李志</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350167/" target="_blank"><img src="https://att.jitashe.org/data/attachment/group/9d/group_101941_icon.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350167/" title="阳光琴手音阶练习的吉他谱" target="_blank">阳光琴手音阶练习</a></div>
+                  <div class="item-text item-artist">练习曲</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350166/" target="_blank"><img src="https://att.jitashe.org/data/attachment/group/8e/group_19301_icon.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350166/" title="璃月港野外战斗BGM（电吉他独奏）的吉他谱" target="_blank">璃月港野外战斗BGM（电吉他独奏）</a></div>
+                  <div class="item-text item-artist">动漫游戏</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350165/" target="_blank"><img src="https://att.jitashe.org/data/attachment/xmimg/images/album/img7/958707/66411509958708.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350165/" title="白色风车（精编原版）的吉他谱" target="_blank">白色风车（精编原版）</a></div>
+                  <div class="item-text item-artist">群星</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350164/" target="_blank"><img src="https://att.jitashe.org/data/attachment/xmimg/images/album/img72/16672/20470501604016673.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350164/" title="会不会的吉他谱" target="_blank">会不会</a></div>
+                  <div class="item-text item-artist">刘大壮</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350163/" target="_blank"><img src="https://att.jitashe.org/data/attachment/xmimg/images/album/img4/7304/330491387359082.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350163/" title="有没有人告诉你（精编版）  【回味经典】的吉他谱" target="_blank">有没有人告诉你（精编版）  【回味经典】</a></div>
+                  <div class="item-text item-artist">陈楚生</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350160/" target="_blank"><img src="https://att.jitashe.org/data/attachment/xmimg/images/album/img17/1017/50511385702998.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350160/" title="黄种人的吉他谱" target="_blank">黄种人</a></div>
+                  <div class="item-text item-artist">谢霆锋</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350159/" target="_blank"><img src="https://att.jitashe.org/data/attachment/xmimg/images/album/img20/130/582190a7985f7_6509720_1478594727.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350159/" title="窗边的云的吉他谱" target="_blank">窗边的云</a></div>
+                  <div class="item-text item-artist">走音</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="oparen_area">
+          <span class="oparen-title"><a>文章</a><icon style="font-weight: 700;font-size: 20px;" class="iconfont icon-fuhao1"></icon></span>
+          <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+            <ul class="layui-tab-title">
+              <li class="layui-this">推荐文章</li>
+
+            </ul>
+          </div>
+          <div class="container-fluid tablist">
+            <div class="row oparen">
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350175/" target="_blank"><img src="https://att.jitashe.org/data/attachment/xmimg/images/album/img35/135/3224671375670448.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350175/" title="沙龙的吉他谱" target="_blank">沙龙</a></div>
+                  <div class="item-text item-artist">陈奕迅</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350174/" target="_blank"><img src="https://att.jitashe.org/data/attachment/group/3c/group_9835_icon.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350174/" title="(郑成河)鬼灭之刃：无限列车篇 主题曲 炎 H的吉他谱" target="_blank">(郑成河)鬼灭之刃：无限列车篇 主题曲 炎 H</a></div>
+                  <div class="item-text item-artist">群星</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350173/" target="_blank"><img src="https://att.jitashe.org/data/attachment/group/96/group_4180_icon.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350173/" title="黄河我的家的吉他谱" target="_blank">黄河我的家</a></div>
+                  <div class="item-text item-artist">张玮玮</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350172/" target="_blank"><img src="https://att.jitashe.org/data/attachment/group/3c/group_9835_icon.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350172/" title="《My only one》Cover郑中基-《暖男爸爸》的吉他谱" target="_blank">《My only one》Cover郑中基-《暖男爸爸》</a></div>
+                  <div class="item-text item-artist">群星</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350170/" target="_blank"><img src="https://att.jitashe.org/data/attachment/xmimg/images/album/img94/7194/14157293421415729342.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350170/" title="定西（原版吉他谱）  【李志经典】的吉他谱" target="_blank">定西（原版吉他谱）  【李志经典】</a></div>
+                  <div class="item-text item-artist">李志</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350167/" target="_blank"><img src="https://att.jitashe.org/data/attachment/group/9d/group_101941_icon.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350167/" title="阳光琴手音阶练习的吉他谱" target="_blank">阳光琴手音阶练习</a></div>
+                  <div class="item-text item-artist">练习曲</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350166/" target="_blank"><img src="https://att.jitashe.org/data/attachment/group/8e/group_19301_icon.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350166/" title="璃月港野外战斗BGM（电吉他独奏）的吉他谱" target="_blank">璃月港野外战斗BGM（电吉他独奏）</a></div>
+                  <div class="item-text item-artist">动漫游戏</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350165/" target="_blank"><img src="https://att.jitashe.org/data/attachment/xmimg/images/album/img7/958707/66411509958708.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350165/" title="白色风车（精编原版）的吉他谱" target="_blank">白色风车（精编原版）</a></div>
+                  <div class="item-text item-artist">群星</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350164/" target="_blank"><img src="https://att.jitashe.org/data/attachment/xmimg/images/album/img72/16672/20470501604016673.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350164/" title="会不会的吉他谱" target="_blank">会不会</a></div>
+                  <div class="item-text item-artist">刘大壮</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350163/" target="_blank"><img src="https://att.jitashe.org/data/attachment/xmimg/images/album/img4/7304/330491387359082.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350163/" title="有没有人告诉你（精编版）  【回味经典】的吉他谱" target="_blank">有没有人告诉你（精编版）  【回味经典】</a></div>
+                  <div class="item-text item-artist">陈楚生</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350160/" target="_blank"><img src="https://att.jitashe.org/data/attachment/xmimg/images/album/img17/1017/50511385702998.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350160/" title="黄种人的吉他谱" target="_blank">黄种人</a></div>
+                  <div class="item-text item-artist">谢霆锋</div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-6">
+                <div class="tablist-item">
+                  <div class="tablist-item-a">
+                    <a href="/tab/1350159/" target="_blank"><img src="https://att.jitashe.org/data/attachment/xmimg/images/album/img20/130/582190a7985f7_6509720_1478594727.jpg?x-oss-process=image/resize,limit_0,w_200,h_200,m_fill/quality,q_90"></a>
+                  </div>
+                  <div class="item-text item-title"><a href="/tab/1350159/" title="窗边的云的吉他谱" target="_blank">窗边的云</a></div>
+                  <div class="item-text item-artist">走音</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<div id="shangxia2">
+  <span id="gotop">
+    <img src="../images/huojian.svg" alt="返回顶部小火箭">
+  </span>
+</div>
+      <div class="footer">
+        <div class="footericon">
+          <span class="iconfont icon--jita"></span>
+          <p class="cr">吉他天空 是GUITAR公司（gttk.com）旗下专注吉他的在线学习交流平台。</p>
+          <p>©1997-2020 GUITAR公司 版权所有粤B2-20090191-18 <a href="#">工业和信息化部备案管理系统网站</a></p>
+        </div>
+      </div>
+
+      <script type="text/javascript" src="../lib/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+      <script src="http://cdn.bootcss.com/gsap/1.19.0/TweenMax.min.js"></script>
+      <script src="http://cdn.bootcss.com/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
+      <script src="../lib/layui-v2.5.5/layui.js" charset="utf-8"></script>
+      <script src="../js/main.js"></script>
+      <script>
+//注意：导航 依赖 element 模块，否则无法进行功能性操作
+layui.use('element', function(){
+  var element = layui.element;
+  element.on('tab(demo)',function(data){
+   console.log(data);
+
+ })
+  //…
+});
+layui.use('carousel', function(){
+  var carousel = layui.carousel;
+  //建造实例
+  carousel.render({
+    elem: '#test1'
+    ,width: '100%' //设置容器宽度
+    ,arrow: 'always' //始终显示箭头
+    //,anim: 'updown' //切换动画方式
+  });
+});
+</script>
+<!-- 条目中可以是任意内容，如：<img src=""> -->
+</body>
+</html>

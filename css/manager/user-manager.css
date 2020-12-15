@@ -1,0 +1,7 @@
+.layui-table-cell{ 
+text-align: center; height: auto; white-space: normal;
+ }
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

@@ -1,0 +1,60 @@
+body{
+	vertical-align:bottom;
+	display:block;
+	  margin:0px;
+	  background:#F0F0F0;
+}
+.layui-logo{
+	margin-left: 150px;
+}
+.layui-nav{
+	margin-left: 150px;
+}
+.layui-form-item{
+	margin-left: 800px;
+}
+.layui-header > .layui-logo{
+	font-size: 25px;
+	color: #9CF69C;
+}
+.layui-form-item > label{
+	margin-top: 10px;
+}
+.layui-form-item > label > span {
+	font-size: 28px;
+	color:white;
+	
+}
+.layui-layout-right{
+	margin-right: 150px;
+}
+.layui-form-item > input{
+
+	margin-top: 15px;
+	border: 1px #ccc solid;
+	height: 18px;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+#search_nav{
+	width: 400px;
+	margin-left: 570px;
+
+
+}
+/*脚部css样式*/
+.footer{
+	background:#ADB3B6;
+	margin-bottom: 0;
+	padding: 30px 0 30px 0;
+	margin-top:30px; 
+}
+.footer > div.footericon{
+	text-align: center;
+}
+.footer > div.footericon > span{
+	font-size: 60px;
+	color: #fff
+
+}

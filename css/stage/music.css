@@ -1,0 +1,94 @@
+@media (min-width: 1300px)
+.container {
+    width: 1260px;
+    max-width: 100%;
+}
+.container {
+    /* position: relative; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: var(--grid-gutters);
+    padding-left: var(--grid-gutters);
+    text-align:center;
+}
+@media (min-width: 62em)
+.col-lg-3 {
+    width: 25%;
+}
+.row{
+	width: 1300px;
+	display:inline-block;
+}
+.row, .row > [class*=col-] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.index-bc .bc-item {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}	
+.container, .row, .row > div {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.col-lg-3 {
+    width: 310.5px;
+    float: left;
+}
+.tablist{
+    width: 1340px;
+    height: 524.5px;
+    margin-top: 15px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.oparen{
+    width: 1300px;
+    height: 524.5px;
+    display:inline-block;
+}
+.col-xs-6{
+   float: left;
+}
+.tablist .row > div {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.item-title > a{
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    float: left; 
+    font: 12px/1.5 Tahoma,'Microsoft Yahei','Simsun';  
+    font-size: 18px;     
+}
+.tablist-item{
+    margin-top: 3px;
+}
+.tablist-item-a > a > img{
+    width: 193.66px;
+    height: 193.66px;
+}
+.tablist-item-a > a > img:hover{
+    box-shadow: 3px 3px 1.5px #333;
+}
+
+@media (min-width: 1300px)
+.container-fluid {
+    width: 1260px;
+    max-width: 100%;
+}
+@media (min-width: 1200px)
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 992px)
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+}

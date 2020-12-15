@@ -1,0 +1,175 @@
+{
+  "homeInfo": {
+    "title": "首页",
+    "href": "welcome-3.html"
+  },
+  "logoInfo": {
+    "title": "GUITAR SKY",
+    "image": "../images/logo.png",
+    "href": ""
+  },
+  "menuInfo": [
+    {
+      "title": "常规管理",
+      "icon": "fa fa-address-book",
+      "href": "",
+      "target": "_self",
+      "child": [
+
+        {
+          "title": "用户管理",
+          "href": "",
+          "icon": "fa fa-user-circle-o",
+          "target": "_self", 
+          "child": [
+            {
+              "title": "会员管理",
+              "href": "user-manager.html",
+              "icon": "fa fa-navicon",
+              "target": "_self"
+            },
+            {
+              "title": "管理员管理",
+              "href": "admin-manager.html",
+              "icon": "fa fa-navicon",
+              "target": "_self"
+            },
+            {
+              "title": "角色管理",
+              "href": "role-manager.html",
+              "icon": "fa fa-navicon",
+              "target": "_self"
+            },
+            {
+              "title": "权限管理",
+              "href": "authority-manager.html",
+              "icon": "fa fa-navicon",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "文章管理",
+          "href": "",
+          "icon": "fa fa-pencil",
+          "target": "_self",
+          "child": [
+            {
+              "title": "文章类型管理",
+              "href": "article-type-manager.html",
+              "icon": "fa fa-navicon",
+              "target": "_self"
+            },
+            {
+              "title": "标签管理",
+              "href": "label-manager.html",
+              "icon": "fa fa-navicon",
+              "target": "_self"
+            }
+            ,
+            {
+              "title": "文章审核管理",
+              "href": "article-check-manager.html",
+              "icon": "fa fa-navicon",
+              "target": "_self"
+            }
+            ,
+            {
+              "title": "文章管理",
+              "href": "article-manager.html",
+              "icon": "fa fa-navicon",
+              "target": "_self"
+            }
+            ,
+            {
+              "title": "文章评论管理",
+              "href": "article-comment-manager.html",
+              "icon": "fa fa-navicon",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "乐谱管理",
+          "href": "",
+          "icon": "fa fa-sticky-note-o",
+          "target": "_self",
+          "child": [
+            {
+              "title": "艺人管理",
+              "href": "artist-manager.html",
+              "icon": "fa fa-navicon",
+              "target": "_self"
+            },
+            {
+              "title": "乐谱管理",
+              "href": "music-manager.html",
+              "icon": "fa fa-navicon",
+              "target": "_self"
+            }
+            ,
+            {
+              "title": "乐谱审核管理",
+              "href": "music-check-manager.html",
+              "icon": "fa fa-navicon",
+              "target": "_self"
+            },
+            {
+              "title": "乐谱评论管理",
+              "href": "music-comment-manager.html",
+              "icon": "fa fa-navicon",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "乐器管理",
+          "href": "",
+          "icon": "fa fa-music",
+          "target": "_self",
+          "child": [
+            {
+              "title": "乐器分类管理",
+              "href": "instrument-type-manager.html",
+              "icon": "fa fa-navicon",
+              "target": "_self"
+            },
+            {
+              "title": "乐器品牌管理",
+              "href": "instrument-brand-manager.html",
+              "icon": "fa fa-navicon",
+              "target": "_self"
+            },
+            {
+              "title": "乐器管理",
+              "href": "instrument-manager.html",
+              "icon": "fa fa-navicon",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "资讯管理",
+          "href": "",
+          "icon": "fa fa-picture-o",
+          "target": "",
+          "child": [
+            {
+              "title": "轮播图管理",
+              "href": "rotation-manager.html",
+              "icon": "fa fa-navicon",
+              "target": "_self"
+            }
+          ]
+        }, {
+          "title": "系统管理",
+          "href": "setting.html",
+          "icon": "fa fa-wrench",
+          "target": "_self"
+        }
+
+      ]
+    }
+    
+  ]
+}
