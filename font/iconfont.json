@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "5765643",
+      "name": "进入",
+      "font_class": "jinru",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "10278498",
+      "name": "火箭",
+      "font_class": "rocket__easyi",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "11766065",
+      "name": "进入",
+      "font_class": "jinru1",
+      "unicode": "e7c6",
+      "unicode_decimal": 59334
+    },
+    {
+      "icon_id": "15807366",
+      "name": "进入",
+      "font_class": "jinrudaobo",
+      "unicode": "e6c3",
+      "unicode_decimal": 59075
+    },
+    {
       "icon_id": "6203190",
       "name": "4-3吉他",
       "font_class": "-jita",

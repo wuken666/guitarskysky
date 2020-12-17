@@ -1,11 +1,11 @@
 .layui-carousel{
-    height: 350px !important;
+	height: 350px !important;
     background-position: center;
     background-size: cover;
 }
 
 .index-bc{
-    padding-left: 0;
+	padding-left: 0;
     padding-right: 0;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -14,7 +14,7 @@
     height: 146px;
 }
 .bc-item{
-    padding-left: 0;
+	padding-left: 0;
     padding-right: 0;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -37,8 +37,8 @@
     width: 25%;
 }
 .row{
-    width: 1300px;
-    display:inline-block;
+	width: 1300px;
+	display:inline-block;
 }
 .row, .row > [class*=col-] {
     -webkit-box-sizing: border-box;
@@ -49,7 +49,7 @@
     padding-right: 0;
     padding-top: 4px;
     padding-bottom: 4px;
-}   
+}	
 .container, .row, .row > div {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
